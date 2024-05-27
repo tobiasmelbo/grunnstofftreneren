@@ -1,0 +1,156 @@
+html {
+    background-color: #232328;
+}
+
+html, body {
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    font-family: Helveteica, Arial, sans-serif;
+}
+
+#konfetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    font-size: 1.1rem;
+    text-shadow: 7px 7px #000;
+    user-select: none;
+}
+
+
+modus {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+modus button{
+    background: none;
+    border: 1px solid #FFF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 6rem;
+    margin: 1rem;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #232328;
+}
+
+modus button:hover{
+    background-color: #303035;
+    cursor: pointer;
+}
+
+modus button:focus{
+    background-color: #303035;  
+}
+
+#timer {
+    font-size: 1rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar-container {
+    text-align: center;
+    margin-bottom: 4rem;
+    background-color: #303035;
+    border-radius: 10px;
+    width: 20rem;
+    height: 0.8rem;
+}
+
+.progressbar {
+    background-color: white;
+    width: 0%;
+    height: 0.4rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+grunnstoff {
+    background-color: #232328;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 10rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border: 1px solid white;
+}
+
+grunnstoff atomnr {
+    font-size: 2rem;
+}
+
+grunnstoff symbol {
+    font-size: 3rem;
+}
+
+.input-container {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.input-container input{
+    text-align: center;
+    background: none;
+    border: none;
+    border-bottom: solid #353540 1px;
+    color: white;
+    outline: none;
+    font-size: 2rem;
+    width: 20rem;
+}
+
+.input-container input:focus {
+    border-bottom: solid #505055 1px;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+}
+
+#hemmelig:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 315px) {
+    html {
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Grunnstofftreneren</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <canvas id="konfetti-canvas"></canvas>
+    
+    <header>
+        <h1>GRUNNSTOFFTRENEREN <a id="hemmelig">⚗️</a></h1>
+    </header>
+
+    <modus>
+        <p id="ferdig-tekst"></p>
+        <button class="enkel">ENKEL</button>
+        <button class="alle">ALLE</button>
+    </modus>
+
+    <main>
+        <p id="timer">0s</p>
+        
+        <div class="progressbar-container">
+            <div class="progressbar"></div>
+        </div>
+        
+
+        <grunnstoff>
+            <atomnr></atomnr>
+            <symbol></symbol>
+        </grunnstoff>
+
+        <div class="input-container">
+            <input autofocus type="text" oninput="på_tastetrykk()">
+        </div>
+    </main>
+
+    <footer>
+        <p>Laget av Tobias Melbø. Kontakt meg på melbotobias@gmail.com 🙏🙏</p>
+    </footer>
+<script src="script.js"></script>
+</body>
