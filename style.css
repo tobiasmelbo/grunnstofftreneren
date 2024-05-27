@@ -44,6 +44,7 @@ modus button{
     color: white;
     font-size: 1.3rem;
     background-color: #232328;
+    box-shadow: 4px 4px #000;
 }
 
 modus button:hover{
