@@ -1,13 +1,37 @@
-html {
-    background-color: #232328;
+:root {
+    --background-color: #232328;
+    --color: #fff;
+    --header-color: #fff;
+    --shadow-color: #000;
+    --border-color: #fff;
+    --highlight-color: #303035;
+    --footer-color: #999;
 }
 
-html, body {
-    color: white;
+html {
     display: flex;
     height: 100%;
     flex-direction: column;
     font-family: Helveteica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    transition: background-color 0.1s;
+}
+
+body.light-mode {
+    --background-color: #f3f3f3;
+    --color: #232328;
+    --header-color: #232328;
+    --shadow-color: #dfdfdf;
+    --border-color: #232328;
+    --highlight-color: #e9e9e9;
+    --footer-color: #26262b;
 }
 
 #konfetti-canvas {
@@ -17,11 +41,23 @@ html, body {
     z-index: -1;
 }
 
+.toggle-button {
+    color: var(--footer-color);
+    font-size: 1.4rem;
+    position: fixed;
+    top: 1rem;
+    left: calc(100% - 2.8rem);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 header {
+    color: var(--header-color);
     text-align: center;
     padding: 1em;
     font-size: 1.1rem;
-    text-shadow: 7px 7px #000;
+    text-shadow: 4px 4px var(--shadow-color);
     user-select: none;
 }
 
@@ -36,24 +72,24 @@ modus {
 
 modus button{
     background: none;
-    border: 1px solid #FFF;
+    border: 1px solid var(--border-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 6rem;
     margin: 1rem;
-    color: white;
+    color: var(--color);
     font-size: 1.3rem;
-    background-color: #232328;
-    box-shadow: 4px 4px #000;
+    background-color: var(--background-color);
+    box-shadow: 4px 4px var(--shadow-color);
 }
 
 modus button:hover{
-    background-color: #303035;
+    background-color: var(--highlight-color);
     cursor: pointer;
 }
 
 modus button:focus{
-    background-color: #303035;  
+    background-color: var(--highlight-color);  
 }
 
 #timer {
@@ -71,14 +107,14 @@ main {
 .progressbar-container {
     text-align: center;
     margin-bottom: 4rem;
-    background-color: #303035;
+    background-color: var(--highlight-color);
     border-radius: 10px;
     width: 20rem;
     height: 0.8rem;
 }
 
 .progressbar {
-    background-color: white;
+    background-color: var(--color);
     width: 0%;
     height: 0.4rem;
     margin-top: 0.2rem;
@@ -89,14 +125,14 @@ main {
 }
 
 grunnstoff {
-    background-color: #232328;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 10rem;
     padding-top: 2em;
     padding-bottom: 2em;
-    border: 1px solid white;
+    border: 1px solid var(--border-color);
 }
 
 grunnstoff atomnr {
@@ -116,15 +152,15 @@ grunnstoff symbol {
     text-align: center;
     background: none;
     border: none;
-    border-bottom: solid #353540 1px;
-    color: white;
+    border-bottom: solid var(--highlight-color) 1px;
+    color: var(--color);
     outline: none;
     font-size: 2rem;
     width: 20rem;
 }
 
 .input-container input:focus {
-    border-bottom: solid #505055 1px;
+    border-bottom: solid var(--color) 1px;
 }
 
 footer {
