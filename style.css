@@ -1,5 +1,5 @@
 :root {
-    --background-color: #1e1e2e;
+    --background-color: #11111b;
     --color: #cdd6f4;
     --header-color: #cdd6f4;
     --shadow-color: #181825;
@@ -25,7 +25,7 @@ body {
 }
 
 body.light-mode {
-    --background-color: #eff1f5;
+    --background-color: #dce0e8;
     --color: #4c4f69;
     --header-color: #4c4f69;
     --shadow-color: #ccd0da;
